@@ -1,0 +1,119 @@
+.content2 .tag{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255/var(--tw-text-opacity));
+  background-color: rgba(71, 97, 88);
+  display: inline-block !important;
+  position: relative;
+  font-size: 14px;
+  border-radius: 7px;
+  width: auto;
+  margin: 0 5px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.9s;
+}
+
+.tag {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.content2:hover .content2 .tag {
+  margin-top: 0;
+  opacity: 1;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 80%;
+  text-align: left;
+}
+
+.decrip {
+  margin-top: 30px;
+  text-align: left;
+  max-width: 80%;
+  font-weight: bold;
+}
+
+.decrip h3 {
+  color: #333; /* Adjust the color as needed */
+  font-family: 'Helvetica', sans-serif; /* Use an appropriate font family */
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-bottom: 10px; /* Add spacing between heading and paragraph */
+  text-transform: none;
+}
+
+.decrip p {
+  color: #666; /* Adjust the color as needed */
+  font-family: 'Arial', sans-serif; /* Use an appropriate font family */
+  font-size: 16px; /* Adjust the font size as needed */
+  line-height: 1.5; /* Adjust the line height as needed */
+}
+
+
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: white;
+  background-color: #235978;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  line-height: 3em;
+  padding: 1px 40px;
+  box-shadow: 0 0 0 0 transparent;
+  transition: all 0.2s ease-in;
+  outline: none;
+}
+
+.button:hover {
+  color: white;
+  box-shadow: 0 0 30px 0 rgba(153, 197, 222);
+  background-color: #062E45;
+  transition: all 0.2s ease-out;
+}
+
+.button:hover:before {
+  animation: shine 0.5s 0s linear;
+}
+
+.button:active {
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.2s ease-in;
+}
+
+.button:before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: white;
+  box-shadow: 0 0 15px 3px white;
+  transform: skewX(-20deg);
+}
+
+@keyframes shine {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+

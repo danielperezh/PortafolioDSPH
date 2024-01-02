@@ -1,0 +1,12 @@
+.lista-puntos {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+a {
+  outline: none;
+  text-decoration: none !important;
+}
+
+

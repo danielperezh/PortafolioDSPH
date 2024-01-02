@@ -1,0 +1,334 @@
+/* .section {
+  padding: 20px;
+} */
+
+#about {
+  text-align: center;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+}
+
+.section_pic-container {
+  max-width: 100%; /* Ajusta el ancho máximo según sea necesario */
+}
+
+.about-pic {
+  max-width: 60%;
+  width: 100%; /* Haz que la imagen ocupe el 100% del contenedor */
+  height: auto; /* Para mantener la proporción de la imagen */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Opcional: Añade sombra */
+  border-radius: 50%;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+/* Estilos base para pantallas más pequeñas */
+.about-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.about-containers {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about-containers2 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.details-container2 {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.text-container {
+  max-width: 100%;
+  width: 100%;
+  text-align: justify;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+
+/* Experiencia */
+
+#experience {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-sub-title {
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+  justify-content: center;
+  gap: 1.5rem;
+  /* margin-bottom: 1rem; */
+}
+
+article .icon {
+  cursor: default;
+}
+
+
+/* media */
+
+@media (min-width:1920px) {
+  .about-details-container{
+    align-items: stretch;
+  }
+
+  .details-container{
+    flex: 0 0 100%;
+    margin: 10px 0;
+    max-width: 80%;
+    text-align: center;
+  }
+  .details-container2 {
+    max-width: 70%;
+  }
+}
+
+@media (min-width:1280px) and (max-width:1919px) {
+  .about-details-container {
+    align-items: stretch;
+  }
+
+  .details-container {
+    flex: 0 0 100%;
+    margin: 10px 0;
+    max-width: 70%;
+    text-align: center;
+  }
+  .details-container2 {
+    max-width: 60%;
+  }
+  .article-container {
+    gap: 1.2rem;
+    justify-content: center;
+  }
+  h4 {
+    margin-bottom: 0px;
+  }
+  article {
+    max-width: 45%;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    gap: 8px;
+    justify-content: flex-start;
+  }
+  .icon {
+    max-width: 40%;
+  }
+}
+
+@media (min-width:981px) and (max-width:1024px) {
+  .about-details-container {
+    align-items: stretch;
+  }
+
+  .details-container {
+    flex: 0 0 100%;
+    margin: 10px 0;
+    max-width: 70%;
+    text-align: center;
+  }
+  .details-container2 {
+    max-width: 50%;
+  }
+  .article-container {
+    gap: 1.1rem;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  article {
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+    gap: 2px;
+  }
+}
+
+@media (max-width: 980px) {
+  .details-container {
+    flex: 0 0 100%;
+    margin: 10px 0;
+    max-width: 65%;
+    text-align: center;
+  }
+  .details-container2 {
+    max-width: 40%;
+  }
+  .article-container {
+    gap: 1rem;
+    justify-content: center;
+  }
+  article {
+    max-width: 100%;
+    margin-bottom: 0.3rem;
+    gap: 2px;
+  }
+  .icon {
+    max-width: 30%;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+
+}
+
+@media (max-width: 780px) {
+  .details-container {
+    flex: 0 0 100%;
+    margin: 10px 0;
+    max-width: 55%;
+    text-align: center;
+  }
+  .details-container2 {
+    max-width: 40%;
+  }
+  .article-container {
+    gap: 1rem;
+    justify-content: center;
+  }
+  article {
+    max-width: 100%;
+    margin-bottom: 0.3rem;
+    gap: 15px;
+  }
+  .icon {
+    max-width: 30%;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .details-container {
+    flex: 0 0 100%;
+    margin: 10px 0;
+    max-width: 50%;
+    text-align: center;
+  }
+  .details-container2 {
+    max-width: 40%;
+  }
+  h3, .experience-sub-title {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .icon {
+    max-width: 80%;
+    width: 40px;
+    height: 40px;
+  }
+  .experience-sub-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .details-container {
+    flex: 0 0 100%;
+    margin: 10px 0;
+    max-width: 45%;
+    text-align: center;
+  }
+  .details-container2 {
+    max-width: 45%;
+    justify-content: center;
+  }
+  h3, .experience-sub-title {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  h4 {
+    font-size: 14px !important;
+    margin-bottom: 0px;
+  }
+  p {
+    font-size: 14px;
+  }
+  article {
+    max-width: 100%;
+    margin-bottom: 0.3rem;
+    gap: 2.5px;
+  }
+
+}
+
+@media (max-width: 320px) {
+  /* Estilos adicionales si es necesario */
+}
+
+
+

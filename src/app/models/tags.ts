@@ -24,4 +24,5 @@ export class tags {
   toString(){
     return this.key;
   }
+  static [key: string]: tags;
 }

@@ -98,10 +98,10 @@ h2 {
 }
 
 h3 {
-    font-size: 1.25rem;
-    line-height: 26px;
-    margin-top: 0;
-    margin-bottom: 0;
+    font-size: 1.25rem !important;
+    line-height: 26px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
     font-weight: 500;
 }
 
@@ -662,8 +662,8 @@ h2.menu-item:after {
     background: #F1F3F6;
     position: fixed;
     height: 40px;
-    width: 69%;
-    right: 13px;
+    width: 68.9%;
+    right: 15px;
     top: -50px;
     transition: all 0.5s;
     z-index: 1;
@@ -1027,8 +1027,8 @@ h2.menu-item:after {
 }
 
 .social a:hover {
-    color: #a5ffe9;
-    opacity: 0.7
+    color: #7CBFB4;
+    opacity: 1;
 }
 
 .dark .social a {
@@ -1452,8 +1452,7 @@ h4.package {
 
 .portfolio-container {
     overflow: hidden;
-    position: relative;
-    height: auto;
+    position: relative !important;
 }
 
 .filters {
@@ -1504,7 +1503,7 @@ h4.package {
 
 .portfolio-column {
     overflow: hidden;
-    position: relative;
+    position: relative !important;
     width: 100%;
     transition: all 1s;
 }
@@ -2536,7 +2535,7 @@ hr {
 
 @media (max-width:800px) and (orientation:landscape) {
     .home {
-        background: url(../images/bg.jpg) #333 30% 30%;
+        /* background: url(../images/bg.jpg) #333 30% 30%; */
         overflow-y: scroll;
     }
     .name-block,

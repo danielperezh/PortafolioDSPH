@@ -14,6 +14,7 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { ProyectoModalComponent } from './proyecto-modal/proyecto-modal.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
 
 
 const firebaseConfig = {
@@ -47,6 +48,7 @@ const firebaseConfig = {
     FormsModule,
     ReactiveFormsModule,
     CarouselModule.forRoot(),
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

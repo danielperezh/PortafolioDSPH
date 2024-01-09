@@ -13,6 +13,14 @@
   transition: all 0.9s;
 }
 
+.name {
+  color: #7CBFB4;
+}
+
+.hola {
+  color: #fff;
+}
+
 .tag {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -57,7 +65,7 @@
   text-transform: uppercase;
   font-family: 'Exo 2', sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 15px;
   display: inline-block;
   position: relative;
   text-align: center;
@@ -75,7 +83,7 @@
 
 .button:hover {
   color: white;
-  box-shadow: 0 0 30px 0 rgba(153, 197, 222);
+  box-shadow: 0 0 20px 0 rgba(153, 197, 222);
   background-color: #062E45;
   transition: all 0.2s ease-out;
 }
@@ -115,5 +123,12 @@
     opacity: 0;
     left: 100%;
   }
+}
+
+@media (min-width: 390px) {
+  .button{
+    padding: 1px 25px;
+  }
+
 }
 

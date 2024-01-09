@@ -1,0 +1,74 @@
+.form-check-label {
+  padding-left: 0px;
+}
+
+.button{
+  border-radius: 7px;
+  border: 2px solid transparent ;
+  margin: 20px 0 ;
+  padding: 12px 28px ;
+  font-size: 12px ;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 600 ;
+  background-color: #333 ;
+  color: #FFF ;
+  letter-spacing: 2px ;
+  z-index: 20;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 0 0 transparent;
+  transition: all 0.2s ease-in;
+  outline: none;
+  text-decoration: none;
+}
+
+
+.button:hover {
+  color: white;
+  box-shadow: 0 0 10px 0 rgba(153, 197, 222);
+  background-color: #062E45;
+  transition: all 0.2s ease-out;
+}
+
+.button:hover:before {
+  animation: shine 0.5s 0s linear;
+}
+
+.button:active {
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.2s ease-in;
+}
+
+.button:before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: white;
+  box-shadow: 0 0 15px 3px white;
+  transform: skewX(-20deg);
+}
+
+@media (min-width:768px) {
+  .portfolio-content h2 {
+    font-size: 1rem ;
+  }
+  .portfolio-content hr{
+    margin: 10px 0 10px ;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio-content h2 {
+    font-size: 2rem ;
+  }
+  .portfolio-content hr{
+    margin: 10px 0 20px ;
+  }
+}

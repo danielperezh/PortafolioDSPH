@@ -7,8 +7,9 @@
         <div class="mb-2">
           <div>
             <button
-              class="btn btn-outline-primary mb-2 me-2"
+              class="button mb-2 me-2"
               (click)="isCollapsed = !isCollapsed"
+              id="filters"
             >
               Filtro
             </button>
@@ -16,7 +17,7 @@
         </div>
 
         <div [collapse]="isCollapsed" [isAnimated]="true">
-          <div class="border mb-2 shadow-sm" style="width: 250px">
+          <div class="border mb-4 shadow-sm" style="max-width: 390px; width: 100%;">
             <form>
               <div class="row mx-0">
                 <div class="col">
@@ -26,7 +27,7 @@
                       <input
                         type="checkbox"
                         class="form-check-input position-static me-2"
-                        [(ngModel)]="java"
+                        [(ngModel)]="tagsState.java"
                         (change)="filtro()"
                         name="Java"
                       />
@@ -36,7 +37,7 @@
                       <input
                         type="checkbox"
                         class="form-check-input position-static me-2"
-                        [(ngModel)]="Html"
+                        [(ngModel)]="tagsState.Html"
                         (change)="filtro()"
                         name="Html"
                       />
@@ -46,11 +47,41 @@
                       <input
                         type="checkbox"
                         class="form-check-input position-static me-2"
-                        [(ngModel)]="css"
+                        [(ngModel)]="tagsState.css"
                         (change)="filtro()"
                         name="Css"
                       />
                       <label class="form-check-label small">Css</label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input position-static me-2"
+                        [(ngModel)]="tagsState.TypeScript"
+                        (change)="filtro()"
+                        name="TypeScript"
+                      />
+                      <label class="form-check-label small">TypeScript</label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input position-static me-2"
+                        [(ngModel)]="tagsState.JavaScript"
+                        (change)="filtro()"
+                        name="JavaScript"
+                      />
+                      <label class="form-check-label small">JavaScript</label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input position-static me-2"
+                        [(ngModel)]="tagsState.Csharp"
+                        (change)="filtro()"
+                        name="C#"
+                      />
+                      <label class="form-check-label small">C#</label>
                     </div>
                   </div>
                 </div>
@@ -60,7 +91,7 @@
                     <input
                       type="checkbox"
                       class="form-check-input position-static me-2"
-                      [(ngModel)]="angular"
+                      [(ngModel)]="tagsState.angular"
                       (change)="filtro()"
                       name="Angular"
                     />
@@ -70,11 +101,74 @@
                     <input
                       type="checkbox"
                       class="form-check-input position-static me-2"
-                      [(ngModel)]="Net"
+                      [(ngModel)]="tagsState.Net"
                       (change)="filtro()"
                       name=".Net Framework"
                     />
                     <label class="form-check-label small">.Net Framework</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input position-static me-2"
+                      [(ngModel)]="tagsState.Bootstrap"
+                      (change)="filtro()"
+                      name="Bootstrap"
+                    />
+                    <label class="form-check-label small">Bootstrap</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input position-static me-2"
+                      [(ngModel)]="tagsState.ASPNET"
+                      (change)="filtro()"
+                      name="ASP.NET Core"
+                    />
+                    <label class="form-check-label small">ASP.NET Core</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input position-static me-2"
+                      [(ngModel)]="tagsState.node"
+                      (change)="filtro()"
+                      name="Node.js"
+                    />
+                    <label class="form-check-label small">Node.js</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input position-static me-2"
+                      [(ngModel)]="tagsState.AndroidStudio"
+                      (change)="filtro()"
+                      name="Android Studio"
+                    />
+                    <label class="form-check-label small">Android Studio</label>
+                  </div>
+                </div>
+                <div class="col">
+                  <small><b>Bases de Datos:</b></small>
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input position-static me-2"
+                      [(ngModel)]="tagsState.SQLServer"
+                      (change)="filtro()"
+                      name="SQL Server"
+                    />
+                    <label class="form-check-label small">SQL Server</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input position-static me-2"
+                      [(ngModel)]="tagsState.PostgreSQL"
+                      (change)="filtro()"
+                      name="PostgreSQL"
+                    />
+                    <label class="form-check-label small">PostgreSQL</label>
                   </div>
                 </div>
               </div>
@@ -114,7 +208,7 @@
   </div>
   <div class="row text-center">
     <div class="col-md-12 btn-email">
-      <a class="btn lowercase">danyy31.perez@gmail.com</a>
+        <a class="btn lowercase" href="mailto:danyy31.perez@gmail.com">danyy31.perez@gmail.com</a>
     </div>
-  </div>
+</div>
 </section>

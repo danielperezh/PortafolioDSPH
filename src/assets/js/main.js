@@ -46,24 +46,23 @@
         });
     });
 
-    $(document).on('click','.portfolio-block, .menu-item', function() {
+    // $(document).on('click', '#filters, input', (event) => {
+    //   console.log(this);
+    //   var $container = $('#portfolio-container');
+    //   var filterValue = this.filtro();
 
-        //Portfolio masonry
-        var $container = $('#portfolio-container');
-        $container.isotope({
-            masonry: {
-                columnWidth: '.portfolio-item'
-            },
-            itemSelector: '.portfolio-item'
-        });
-        $(document).on('click', 'li, #filters', function() {
-            $('#filters li').removeClass('active');
-            $(this).addClass('active');
-            var filterValue = $(this).attr('data-filter');
-            $container.isotope({ filter: filterValue });
-        });
+    //   // Aplicar filtro con Isotope
+    //   $container.isotope({ filter: filterValue });
 
-    });
+    //   // Layout después de la animación del filtro
+    //   $container.one('arrangeComplete', () => {
+    //      $container.isotope('layout');
+    //   });
+    // });
+
+    // $(window).on('resize', () => {
+    //   $('#portfolio-container').isotope('layout');
+    // });
 
     // Typing Animation (Typed.js)
     $('#element').typed({

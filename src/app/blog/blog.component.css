@@ -140,6 +140,10 @@ article .icon {
   cursor: default;
 }
 
+article p {
+  white-space: nowrap;
+}
+
 
 /* media */
 
@@ -162,9 +166,6 @@ article .icon {
     max-width: 100%;
     margin-bottom: 0.3rem;
     gap: 2px;
-  }
-  .icon {
-    max-width: 30%;
   }
   .experience-sub-title {
     font-size: 1.25rem;
@@ -258,6 +259,9 @@ article .icon {
   p {
     margin: 0 auto;
     width: 97%;
+  }
+  .icon {
+    max-width: 50%;
   }
 }
 

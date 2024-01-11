@@ -5,11 +5,11 @@
 <div class="inline-menu-container">
   <span class="status">Estoy disponible</span>
   <ul class="inline-menu">
-      <li class="about menu-item">Resumen</li>
-      <li class="portfolio menu-item">Portafolio</li>
-      <li class="blog menu-item">Sobre Mi</li>
-      <li class="contact menu-item">Contacto</li>
-      <li id="close" class="menu-item"><i class="ion-ios-close-empty"></i></li>
+      <li class="about menu-item" routerLink="/resumen" routerLinkActive="active">Resumen</li>
+      <li class="portfolio menu-item" routerLink="/portafolio" routerLinkActive="active">Portafolio</li>
+      <li class="blog menu-item" routerLink="/sobre_mi" routerLinkActive="active">Sobre Mi</li>
+      <li class="contact menu-item" routerLink="/contacto" routerLinkActive="active">Contacto</li>
+      <li id="close" class="menu-item" routerLink="/"><i class="ion-ios-close-empty"></i></li>
   </ul>
 </div>
 <section class="home">
@@ -75,7 +75,7 @@
             <carousel>
               <div *ngFor="let picture of infoProyecto.pictures">
                 <slide>
-                  <img src="{{picture}}" alt="imagen">
+                  <img src="{{picture}}" alt="imagen" [attr.loading]="'eager'">
                 </slide>
               </div>
             </carousel>

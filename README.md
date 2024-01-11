@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
 
-https://raw.githubusercontent.com/danielperezh/PortafolioDSPH/main/Captura.JPG
+[https://raw.githubusercontent.com/danielperezh/PortafolioDSPH/main/Captura.JPG](https://github.com/danielperezh/PortafolioDSPH/blob/main/Captura.JPG)
 
 ## Development server
 

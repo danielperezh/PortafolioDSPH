@@ -274,7 +274,9 @@ a:not([href]):not([tabindex]) {
 .home {
     width: 100%;
     height: 100vh;
-    position: fixed;
+    position: relative;
+    overflow: hidden;
+    /* position: fixed; */
     overflow: hidden;
     background-size: cover;
     z-index: 0
@@ -286,6 +288,38 @@ a:not([href]):not([tabindex]) {
 }
 
 .home .bgScroll {
+  min-height: 100vh; /* Ajusta la altura total según el número de repeticiones deseadas */
+  animation: scrollAnimation 40s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.bgScroll::before {
+  content: "";
+  background: black url(../images/bg/fondo.webp) repeat-y center top;
+  position: absolute;
+  top: 0; /* Coloca la segunda capa debajo de la primera */
+  left: 0;
+  width: 100%;
+  height: 200%;
+}
+
+@keyframes scrollAnimation {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(-100%);
+  }
+}
+
+
+/* .home .bgScroll {
+    min-height: 100vh;
     animation: 40s linear 0s normal none infinite running bgScroll;
     background: black url(../images/bg/fondo.webp) repeat scroll center top;
 }
@@ -294,6 +328,7 @@ a:not([href]):not([tabindex]) {
     height: 400%;
     position: absolute;
     width: 100%;
+    min-height: 100vh;
     z-index: -1;
 }
 
@@ -320,11 +355,12 @@ a:not([href]):not([tabindex]) {
         -webkit-transform: translateY(-1934px);
         transform: translateY(-1934px);
     }
-}
+} */
 
 .overlay {
     background-color: rgba(0, 0, 0, 1);
     height: 100%;
+    min-height: 100vh;
     position: fixed;
     width: 100%;
 }
@@ -628,7 +664,7 @@ h2.menu-item:after {
 
 .inline-menu li.active,
 .inline-menu li:hover {
-    color: #333;
+    color: #5e9e94;
 }
 
 .inline-menu li.active {
@@ -904,27 +940,26 @@ h2.menu-item:after {
 
 .social {
     /* position: absolute; */
-    bottom: 15%;
+    bottom: 25%;
     padding-left: 0px;
 }
 
 .social li {
     display: inline-block;
-    margin-right: 2px;
     text-align: center;
 }
 
 .social a {
     color: #FFF;
     display: inline-block;
-    height: 35px;
-    width: 35px;
+    height: 45px;
+    width: 45px;
     transition: all 0.5s;
 }
 
 .social li i {
     line-height: 32px;
-    font-size: 26px;
+    font-size: 36px;
 }
 
 .social a:hover {
@@ -1408,6 +1443,7 @@ h4.package {
     position: relative !important;
     width: 100%;
     transition: all 1s;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 50%);
 }
 
 .portfolio-column:hover {
@@ -1512,6 +1548,7 @@ h4.package {
   margin-bottom: 10px;
   border-radius: 10px;
   border: none;
+  border: 0.3px solid #062E45;
 }
 
 /* Estilos para la etiqueta "Descripción" */
@@ -2365,7 +2402,7 @@ hr {
         padding: 0 10px;
     }
     .content {
-        padding: 120px 50px 50px;
+        padding: 100px 50px 50px;
     }
 }
 
@@ -2487,7 +2524,7 @@ hr {
     }
     .social {
         position: relative;
-        margin: 50px 0;
+        margin: 20px 0;
     }
     .inline-menu-container {
         width: 100%;
@@ -2603,7 +2640,7 @@ hr {
     }
     .social {
         position: relative;
-        margin: 50px 0;
+        margin: 20px 0;
     }
     .menu4 .social {
         bottom: 0;
@@ -2633,7 +2670,7 @@ hr {
 
 @media (max-width:767px) {
     .home {
-        overflow-y: scroll;
+        overflow-y: hidden;
     }
     /* .home .bgScroll {
         animation: none;
@@ -2707,9 +2744,9 @@ hr {
     h2.menu-item:after {
         display: none;
     }
-    .social {
+    /* .social {
         display: none;
-    }
+    } */
     .project {
         width: 100%;
     }

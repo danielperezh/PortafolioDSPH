@@ -2,11 +2,20 @@
   list-style-type: disc;
   margin-left: 20px;
   margin-bottom: 5px;
+
+}
+
+li::marker {
+  color: #5e9e94;
 }
 
 a {
   outline: none;
   text-decoration: none !important;
+}
+
+.name {
+  color: #5e9e94;
 }
 
 

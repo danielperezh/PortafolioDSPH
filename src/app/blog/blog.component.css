@@ -148,31 +148,7 @@ article p {
 /* media */
 
 
-@media (max-width: 980px) {
-  .details-container {
-    flex: 0 0 100%;
-    margin: 10px 0;
-    max-width: 50%;
-    text-align: center;
-  }
-  .details-container2 {
-    max-width: 40%;
-  }
-  .article-container {
-    gap: 1rem;
-    justify-content: center;
-  }
-  article {
-    max-width: 100%;
-    margin-bottom: 0.3rem;
-    gap: 2px;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-}
-
-@media (min-width: 390px) {
+@media (min-width: 320px) and (max-width:390px) {
   .details-container {
     flex: 0 0 100%;
     margin: 10px 0;
@@ -202,7 +178,7 @@ article p {
 
 }
 
-@media (min-width: 576px) {
+@media (min-width: 400px) and (max-width:576px) {
   .details-container {
     flex: 0 0 100%;
     margin: 10px 0;
@@ -265,12 +241,28 @@ article p {
   }
 }
 
-@media (max-width: 928px) {
+
+@media (max-width: 980px) {
   .details-container {
     flex: 0 0 100%;
     margin: 10px 0;
-    max-width: 45%;
+    max-width: 50%;
     text-align: center;
+  }
+  .details-container2 {
+    max-width: 40%;
+  }
+  .article-container {
+    gap: 1rem;
+    justify-content: center;
+  }
+  article {
+    max-width: 100%;
+    margin-bottom: 0.3rem;
+    gap: 2px;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
   }
 }
 
@@ -342,6 +334,9 @@ article p {
   }
   .icon {
     max-width: 40%;
+  }
+  h5 {
+    font-size: 15px;
   }
 }
 

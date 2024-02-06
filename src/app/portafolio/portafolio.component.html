@@ -27,6 +27,16 @@
                       <input
                         type="checkbox"
                         class="form-check-input position-static me-2"
+                        [(ngModel)]="tagsState.Csharp"
+                        (change)="filtro()"
+                        name="C#"
+                      />
+                      <label class="form-check-label small">C#</label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input position-static me-2"
                         [(ngModel)]="tagsState.java"
                         (change)="filtro()"
                         name="Java"
@@ -73,16 +83,7 @@
                       />
                       <label class="form-check-label small">JavaScript</label>
                     </div>
-                    <div class="form-check">
-                      <input
-                        type="checkbox"
-                        class="form-check-input position-static me-2"
-                        [(ngModel)]="tagsState.Csharp"
-                        (change)="filtro()"
-                        name="C#"
-                      />
-                      <label class="form-check-label small">C#</label>
-                    </div>
+
                   </div>
                 </div>
                 <div class="col">
@@ -126,16 +127,6 @@
                       name="ASP.NET Core"
                     />
                     <label class="form-check-label small">ASP.NET Core</label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      type="checkbox"
-                      class="form-check-input position-static me-2"
-                      [(ngModel)]="tagsState.node"
-                      (change)="filtro()"
-                      name="Node.js"
-                    />
-                    <label class="form-check-label small">Node.js</label>
                   </div>
                   <div class="form-check">
                     <input
@@ -203,6 +194,7 @@
           </div>
           <!-- WORK 1 END -->
         </div>
+
       </div>
     </div>
   </div>

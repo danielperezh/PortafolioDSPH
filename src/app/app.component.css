@@ -13,12 +13,36 @@
   transition: all 0.9s;
 }
 
+/* .bi-github::before {
+  background-color: white;
+  color: black;
+  border-radius: 100%;
+}
+
+.bi-whatsapp::before {
+  background-color: white;
+  color: #40C351;
+  border-radius: 100%;
+}
+
+.bi-linkedin::before {
+  background-color: white;
+  color: #0078D4;
+}
+
+.bi-envelope-at-fill::before {
+  color: #ff2525;
+} */
+
+
 .name {
   color: #7CBFB4;
+  margin-bottom: 0px;
 }
 
 .hola {
   color: #fff;
+  margin-bottom: 0px;
 }
 
 .tag {

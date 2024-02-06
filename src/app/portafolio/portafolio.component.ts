@@ -17,6 +17,8 @@ export class PortafolioComponent implements OnInit{
 
   isCollapsed: boolean = true;
 
+  isLoading: boolean = true;
+
   tagsState: Tags = {
     angular: false,
     java: false,

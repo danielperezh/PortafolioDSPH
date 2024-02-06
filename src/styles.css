@@ -1,3 +1,6 @@
+/* styles.css o styles.scss */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
 /* You can add global styles to this file, and also import other style files */
 /*-------------------------------------------------------------------
 
@@ -104,4 +107,8 @@
 .carousel-control-prev {
     top: 50%;
     transform: translateY(-50%);
+}
+
+body {
+  min-height: 100vh;
 }
